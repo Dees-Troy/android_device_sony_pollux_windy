@@ -19,6 +19,9 @@ $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/kernel:kernel
+
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
